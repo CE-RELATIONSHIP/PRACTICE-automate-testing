@@ -18,7 +18,7 @@ Test when x is 36
     [Documentation]    Test if 36 is a prime number.
     ${response}=    GET    ${IS_PRIME_ENDPOINT}/36
     Status Should Be    200
-    Should Not Be True    ${response.json()}    False
+    Should Not Be True    ${response.json()}
     Log    ${\n}Result: ${response.json()}    console=True
 
 Test when x is 13219
