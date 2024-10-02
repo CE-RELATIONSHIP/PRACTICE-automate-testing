@@ -6,6 +6,7 @@ Suite Teardown    Delete All Sessions
 *** Variables ***
 ${IS_PRIME_ENDPOINT}    /is_prime
 ${HEADERS}    {"Content-Type": "application/json"}
+
 *** Test Cases ***
 Test when x is 17
     [Documentation]    Test if 17 is a prime number.
